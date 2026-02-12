@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait Effect</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div id="letter-overlay">
+        <h1>Happy Valentine's Day!!!</h1>
+        <div class="content">
+            <p>I wanted to take this moment to tell you how much you mean to me. You are the most important person in my life, and I cherish every moment we spend together.</p>
+            <p>I also want to sincerely apologize for everything. I'm sorry for my shortcomings and for any pain I've caused. I miss you more than words can say.</p>
+            <p class="zoom-hint">Please zoom in on the image to read the letters in my heart...</p>
+        </div>
+    </div>
+    <p id="portrait-text"></p>
+
+    <script>
+        const text = "Iloveyou, Sorry and Imissyou. ".repeat(2000); // Specific text requested
+        document.getElementById('portrait-text').innerText = text;
+    </script>
+</body>
+</html>
