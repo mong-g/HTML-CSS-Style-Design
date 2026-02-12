@@ -95,8 +95,10 @@ body {
     }
 
     #portrait-text {
-        font-size: 8px;
-        line-height: 6px;
-        background-size: 180%; /* Zoom in more on mobile to keep face visible */
+        font-size: 6px !important;
+        line-height: 5px !important;
+        letter-spacing: -0.5px !important;
+        background-size: 200% !important; /* Zoom in more on mobile to focus on the face */
+        background-position: center 35% !important;
     }
 }
