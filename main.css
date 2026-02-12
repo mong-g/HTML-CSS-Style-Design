@@ -9,13 +9,15 @@ body {
 
 #letter-overlay {
     position: absolute;
-    left: 50px;
-    top: 50%;
+    left: 5%;
+    top: 30%;
     transform: translateY(-50%);
-    width: 300px;
+    width: 320px;
+    max-width: 30%;
     z-index: 100;
     color: #fff;
-    pointer-events: none; /* Allows interacting with the portrait text behind if needed */
+    pointer-events: none;
+    text-align: left;
 }
 
 #letter-overlay h1 {
@@ -28,8 +30,8 @@ body {
 }
 
 #letter-overlay .content p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.6;
     margin-bottom: 15px;
     color: #ddd;
     /* Reset portrait text styles for this specific div */
@@ -66,4 +68,31 @@ body {
     color: transparent;
 
     filter: grayscale(100%) brightness(0.8) contrast(3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    #letter-overlay {
+        left: 50% !important;
+        top: 20% !important;
+        transform: translateX(-50%) !important;
+        width: 90% !important;
+        max-width: 90% !important;
+        text-align: center !important;
+    }
+
+    #letter-overlay h1 {
+        font-size: 1.5rem;
+    }
+
+    #letter-overlay .content p {
+        font-size: 0.9rem;
+        text-align: center !important;
+    }
+
+    #portrait-text {
+        font-size: 8px;
+        line-height: 6px;
+        background-size: 180%; /* Zoom in more on mobile to keep face visible */
+    }
 }
