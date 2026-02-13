@@ -69,7 +69,7 @@ body {
     -webkit-text-fill-color: transparent;
     color: transparent;
 
-    filter: grayscale(100%) sepia(20%) brightness(0.95) contrast(1.7);
+    filter: grayscale(100%) sepia(20%) brightness(1.1) contrast(1.7);
     /* Subtle shadow to help define facial features through the text */
     text-shadow: 0 0 1px rgba(0,0,0,0.5); /* darker shadow for depth */
 }
